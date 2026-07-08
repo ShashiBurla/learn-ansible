@@ -1,0 +1,10 @@
+---
+- name: Get IP and Current User
+  hosts: all
+  gather_facts: yes
+
+  tasks:
+    - name: print ip of the machine
+      ansible.builtin.shell:
+        msg:
+          - "ip address ifconfi"
