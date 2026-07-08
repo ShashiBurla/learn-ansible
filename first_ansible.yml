@@ -6,5 +6,4 @@
   tasks:
     - name: print ip of the machine
       shell: |
-        ifconfig
         whoami
