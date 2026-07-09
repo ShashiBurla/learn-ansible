@@ -1,7 +1,7 @@
 ---
 - name: Get IP and Current User
   hosts: all
-  became: yes
+  become: yes
   # gather_facts: yes
 
   tasks:
