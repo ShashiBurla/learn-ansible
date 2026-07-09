@@ -1,9 +1,11 @@
 ---
 - name: Get IP and Current User
   hosts: all
-  gather_facts: yes
+  became: yes
+  # gather_facts: yes
 
   tasks:
-    - name: print ip of the machine
-      shell: |
-        whoami
+    - name: install nginx
+      ansible.builtin.dnf:
+        name: nginx
+        state: latest
