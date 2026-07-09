@@ -1,11 +1,8 @@
 ---
-- name: Get IP and Current User
+- name: first ansible playbook
   hosts: all
-  become: yes
   # gather_facts: yes
 
   tasks:
-    - name: install nginx
-      ansible.builtin.dnf:
-        name: nginx
-        state: absent
+    - name: check ping
+      ansible.builtin.ping:
